@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact | Prem Purohit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@coreui/icons/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">AG</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <section class="page contact-page">
+      <div class="contact-wrapper">
+        <div class="contact-header">
+          <h1>Contact</h1>
+          <p>Let's connect - collaborations, roles, or tech discussions.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card socials">
+            <div class="card-head">
+              <i data-lucide="at-sign"></i>
+              <h2>Socials</h2>
+            </div>
+
+            <a
+              href="https://github.com/purohitprem"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="bi bi-github"></i>
+              <span>GitHub -> @purohitprem</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/prempurohit/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="bi bi-linkedin"></i>
+              <span>LinkedIn -> Prem Purohit</span>
+            </a>
+
+            <a href="mailto:ashish.golchha23@gmail.com" class="social-link">
+              <i data-lucide="mail"></i>
+              <span>Email -> prempurohit260@gmail.com</span>
+            </a>
+
+            <a href="tel:+919079287003" class="social-link">
+              <i data-lucide="phone"></i>
+              <span>Phone -> +91 86907 96004</span>
+            </a>
+
+            <div class="social-link location-text">
+              <i data-lucide="map-pin"></i>
+              <span>Location -> Bikaner, Rajasthan, India</span>
+            </div>
+
+            <div class="social-extra">
+              <div class="availability-badge">
+                <span class="pulse-dot"></span>
+                Open to Building Scalable Backend and Modern Frontend Systems
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card form-card">
+            <div class="card-head">
+              <i data-lucide="send"></i>
+              <h2>Send Message</h2>
+            </div>
+
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/xgolvkva"
+              method="POST"
+            >
+              <input type="text" name="name" placeholder="Your Name" required />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message..."
+                required
+              ></textarea>
+
+              <button type="submit" class="btn primary">Send Message</button>
+            </form>
+
+            <p id="formStatus" class="form-status"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo">AG</div>
+          <p>Building scalable backend and modern frontend systems.</p>
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://github.com/purohitprem"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/prempurohit/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a
+            href="https://leetcode.com/iprempurohit"
+            target="_blank"
+            rel="noopener"
+            aria-label="LeetCode"
+          >
+            <i class="cib-leetcode"></i>
+          </a>
+          <a
+            href="https://discord.com/users/prempurohit_"
+            target="_blank"
+            rel="noopener"
+            aria-label="Discord"
+          >
+            <i class="bi bi-discord"></i>
+          </a>
+          <a href="mailto:prempurohit260@gmail.com" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
+          <a href="tel:+91 86907 96004" aria-label="Phone">
+            <i data-lucide="phone"></i>
+          </a>
+        </div>
+        <div class="footer-meta">
+          <span>Bikaner, Rajasthan, India</span>
+          <span>&copy; 2026 Prem Purohit</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="contact.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
