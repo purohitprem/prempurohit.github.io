@@ -4,7 +4,7 @@ const status = document.getElementById("formStatus");
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
 
-  const data = new FormData(form);
+  const   data = new FormData(form);
 
   try {
     const response = await fetch(form.action, {
